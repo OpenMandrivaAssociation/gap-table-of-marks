@@ -37,9 +37,11 @@ cd ..
 cp -a tomlib $RPM_BUILD_ROOT%{_gap_dir}/pkg
 rm -f $RPM_BUILD_ROOT%{_gap_dir}/pkg/tomlib/README
 
-%posttrans -p %{_bindir}/update-gap-workspace
+%posttrans
+    %{_bindir}/update-gap-workspace
 
-%postun -p %{_bindir}/update-gap-workspace
+%postun
+    %{_bindir}/update-gap-workspace
 
 %files
 %doc README

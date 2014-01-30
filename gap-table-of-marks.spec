@@ -2,8 +2,10 @@
 
 Name:           gap-table-of-marks
 Version:        %(echo %upstreamver | sed -r "s/r|p/./g")
-Release:        4%{?dist}
+Release:        4.0%{?dist}
 Summary:        GAP Table of Marks package
+
+
 License:        GPLv2+
 URL:            http://schmidt.nuigalway.ie/tomlib/
 Source0:        http://schmidt.nuigalway.ie/tomlib/tomlib%{upstreamver}.tar.gz
@@ -44,3 +46,25 @@ rm -f $RPM_BUILD_ROOT%{_gap_dir}/pkg/tomlib/README
 %files
 %doc README
 %{_gap_dir}/pkg/tomlib/
+
+%changelog
+* Fri Nov 15 2013 Jerry James <loganjerry@gmail.com> - 1.2.4-1
+- New upstream release
+
+* Mon Oct 21 2013 Jerry James <loganjerry@gmail.com> - 1.2.3-1
+- New upstream release
+
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.2-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Wed Feb 13 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* Thu Sep 13 2012 Jerry James <loganjerry@gmail.com> - 1.2.2-3
+- Rebuild for GAP 4.5
+
+* Thu Jul 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* Tue Jan  3 2012 Jerry James <loganjerry@gmail.com> - 1.2.2-1
+- Initial RPM

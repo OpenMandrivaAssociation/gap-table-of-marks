@@ -7,7 +7,7 @@ Summary:        GAP Table of Marks package
 
 
 License:        GPLv2+
-URL:            http://schmidt.nuigalway.ie/tomlib/
+URL:            https://schmidt.nuigalway.ie/tomlib/
 Source0:        http://schmidt.nuigalway.ie/tomlib/tomlib%{upstreamver}.tar.gz
 BuildArch:      noarch
 
